@@ -1,0 +1,55 @@
+# Site wide configuration
+
+title:            Bojan's Blog
+locale:           en_US
+url:              https://bojanmisic.com
+
+name: Bojan's Blog
+description: To Do
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+# Site owner
+owner:
+  name: Bojan Misic
+  avatar: BojanMisic.jpg
+  bio: "Software Engineer. AI & ML Enthusiast. Microsoft Stack."
+  email: misic.bojan@gmail.com
+  disqus-shortname: bojanmisic
+  twitter: the_botja
+  facebook: #username
+  google:
+    plus: #username
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: bojanmisic
+  linkedin: bojanmisic
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
